@@ -1,0 +1,32 @@
+{
+  "name": "moonbase_tacchyons_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gulp deploy_staging",
+    "deploy_prod": "gulp deploy_production",
+    "clean": "gulp clean_build_folder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://private.maheshcasiraghi.com/"
+  },
+  "author": "Mahesh Casiraghi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://private.maheshcasiraghi.com/"
+  },
+  "homepage": "https://private.maheshcasiraghi.com/",
+  "devDependencies": {
+    "maintained-moonbase": "1.0.2",
+    "node-gyp": "3.8.0",
+    "gulp": "3.9.1",
+    "concurrent-transform": "1.0.0",
+    "gulp-clean": "0.4.0",
+    "gulp-load-plugins": "1.5.0",
+    "gulp-util": "3.0.8",
+    "gulp-awspublish": "3.4.0"
+  }
+}

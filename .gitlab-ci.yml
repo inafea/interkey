@@ -1,0 +1,27 @@
+image: tiangolo/docker-with-compose
+
+before_script:
+  - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+
+stages:
+  - test
+  - build
+
+tests:
+  stage: test
+  script:
+    - sh ./script-test.sh
+  tags:
+    - build
+    - test
+
+    
+build-prod:
+  stage: build
+  script:
+    - TAG=prod sh ./script-build-push.sh
+  only:
+    - master
+  tags:
+    - build
+    - test

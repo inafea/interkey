@@ -1,0 +1,39 @@
+{   "development" :
+
+    {   
+        "environment" : "development",
+        "app_server_url" : "https://b4e03b95.ngrok.io",
+        "app_frontend_url" : "https://192.168.0.12:8000/",
+        "logrocket" : false,
+        "fullstory" : false,
+        "hotjar" : false,
+        "amplitude" : true,
+        "stripe_public" : ""
+    },
+
+    "staging" :
+
+    {   
+        "environment": "staging",
+        "app_server_url" : "https://interkey.backend.server.com",
+        "app_frontend_url" : "https://www.interkey.com.sa/",
+        "logrocket" : false,
+        "fullstory" : false,
+        "hotjar" : false,
+        "amplitude" : false,
+        "stripe_public" : ""
+    },
+
+    "production" :
+
+    {   
+        "environment": "production",
+        "app_server_url" : "https://interkey.backend.server.com",
+        "app_frontend_url" : "https://www.interkey.com.sa/",
+        "logrocket" : false,
+        "fullstory" : false,
+        "hotjar" : false,
+        "amplitude" : false,
+        "stripe_public" : ""
+    }
+}

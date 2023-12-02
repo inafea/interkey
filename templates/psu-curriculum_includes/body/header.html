@@ -1,0 +1,29 @@
+{% include "common/mobile_menu.html" %}
+<nav class="hero-head">
+    <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+            <a href="/">
+                <figure class="navbar-item image">
+                    <img src="/assets/static/images/index/interkey_original.svg" style="width: auto; height: 3rem;">
+                </figure>
+            </a>
+        </div>
+        <div class="column center desktop">
+            <p class="navbar-item button is-small is-outlined non-active">PSU CURRICULUM</p>
+            <a href="/wired-broadcast" class="navbar-item">WIRED BROADCAST</a>
+            <a href="/couchbase" class="navbar-item">COUCHBASE</a>
+            <a href="/datum-consultants" class="navbar-item">DATUM CONSULTANTS</a>
+        </div>
+        <div class="column right">
+            <figure id="mobileMenuButton" class="navbar-item image non-desktop" onclick="document.querySelectorAll('#mobileMenu, #mobileMenuButton').forEach(function(e) {e.classList.toggle('open')});">
+                <i class="fas fa-3x fa-bars is-size-5"></i>
+                <i class="fas fa-3x fa-times is-size-4 has-text-white" style="display:none;"></i>
+            </figure>
+            <a class="navbar-item is-link desktop" href="/login">
+                <span class="icon">
+                    <i class="fas fa-sign-in-alt is-size-5"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+</nav>

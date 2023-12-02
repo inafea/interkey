@@ -1,0 +1,232 @@
+body {
+  // background: #2593D5;
+  background: #2E2C71;
+  position: relative !important;
+}
+
+.alternate_background {
+  background: #F7F7F7;
+}
+
+.section_title {
+  color: white;
+}
+
+#header {
+
+  #headLogo {
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .navbar-brand,
+  .navbar-burger {
+    min-height: 5.25rem;
+    .navbar-end {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+  
+
+
+  .navbar-item {
+    h1 {
+      color: #2b2e71;
+      font-size: 0.80rem !important;
+    }
+    img {
+      max-height: 2.5rem;
+    }
+    .select select {
+      color: #2b2e71;
+      font-weight: 700;
+      border-color:#2b2e71 !important;
+      box-shadow: none !important;
+    }
+    .icon {
+      color: #2b2e71;
+    }
+    .select:not(.is-multiple):not(.is-loading)::after {
+      border-color: #2b2e71;
+    }
+  }
+
+  .navbar-item.is-mega {
+    position: static;
+
+    .navbar-item {
+      img {
+        height: 100%;
+        width: auto;
+      }
+
+      &:hover {
+        background: transparent;
+      }
+    }
+
+    .is-mega-menu-title {
+      margin-bottom: 0;
+      padding: .375rem 1rem;
+    }
+  }
+}
+
+.MainHero {
+
+  padding-top: 90px;
+
+
+  .hero-body {
+    background: #2E2C71;
+  }
+
+  position: relative;
+
+  h2,
+  p {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  h2 {
+    span {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  #angles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: skewY(-3deg);
+    transform-origin: 0;
+    position: absolute;
+    box-shadow: inset 0 -10px 80px -10px rgba(0, 0, 0, 0.1);
+    // background: linear-gradient(150deg, rgb(70, 155, 64) 15%, rgb(83, 175, 76) 50%, #43b853 94%);
+    // background-color: #3273dc !important;
+    background-image: linear-gradient(180deg, #2E2C71, transparent), linear-gradient(-121deg, transparent 94%, hsla(0, 0%, 56%, .27) 0), linear-gradient(-107deg, transparent 92%, hsla(0, 6%, 55%, .18) 0), linear-gradient(-99deg, transparent 90%, hsla(0, 0%, 100%, .08) 0), linear-gradient(0deg, #124764, #214358);
+  }
+
+  .iot {
+    transform: skewY(3deg);
+    opacity: 0.15;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    // background: url("/assets/static/images/index/industrial_iot.svg") no-repeat center center fixed;
+    background: url("/assets/static/images/index/back.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center 80px;
+  }
+
+  #browse-success-button {
+    .icon {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+
+}
+
+.Mockups {
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  pointer-events: none;
+  left: 52%;
+  width: 829px;
+  margin-left: -10px;
+  transform: rotate(-2deg);
+  transform-origin: 100% 0;
+}
+
+.Cards {
+  .hero-body {
+    background: #2E2C71;
+    padding-top: 50px;
+  }
+
+  .card {
+    z-index: 9;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+
+    #integrationImg {
+      width: 90% !important;
+      margin-left: 5% !important;
+    }
+
+    .media {
+      min-height: 250px;
+    }
+  }
+}
+
+.partners_expanded {
+  .card {
+    z-index: 9;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+
+    .media {
+      min-height: 200px;
+    }
+  }
+}
+
+.two_by_four_grid {
+  .card-head {
+    img {
+      height: 70px;
+      width: auto;
+    }
+  }
+}
+
+.CTA {
+  background: #2593D5;
+  position: relative;
+}
+
+.CTA::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 00px;
+  height: 400px;
+  background: #2593D5;
+  transform: skew(0, -3deg);
+  transform-origin: top left;
+  z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .CTA {
+    .hero-body {
+      padding-top: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  .Mockups {
+    top: 84px;
+    position: relative;
+    width: 120%;
+    left: 0;
+    transform-origin: top;
+    margin-top: -25%;
+    margin-bottom: 30px;
+  }
+
+  .partners_expanded {
+    .card {
+      .media {
+        min-height: 100px;
+      }
+    }
+  }
+}
